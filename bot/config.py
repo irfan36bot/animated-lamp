@@ -3,12 +3,12 @@ import os
 
 class Config:
 
-    API_ID = int(os.environ.get("API_ID"))
-    API_HASH = os.environ.get("API_HASH")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN")
+    API_ID = 10956858
+    API_HASH = "cceefd3382b44d4d85be2d83201102b7"
+    BOT_TOKEN = "5920035919:AAFi_dICo8TVwA4v6nnS5jw6xaJafKMofjo"
     SESSION_NAME = os.environ.get("SESSION_NAME", ":memory:")
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL"))
-    DATABASE_URL = os.environ.get("DATABASE_URL")
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", -1001557295179))
+    DATABASE_URL = "mongodb+srv://Irfan:786or786@cluster0.2jjhd.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
     AUTH_USERS = [int(i) for i in os.environ.get("AUTH_USERS", "").split(" ")]
     MAX_PROCESSES_PER_USER = int(os.environ.get("MAX_PROCESSES_PER_USER", 2))
     MAX_TRIM_DURATION = int(os.environ.get("MAX_TRIM_DURATION", 600))
